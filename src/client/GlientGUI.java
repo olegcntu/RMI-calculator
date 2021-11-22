@@ -52,7 +52,6 @@ public class GlientGUI extends JFrame {
     public static void main(String[] args) {
         JFrame frame = new GlientGUI("RMI calculator");
         frame.setVisible(true);
-
     }
 
     private String AllOperationWork(String param) {

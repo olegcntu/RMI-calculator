@@ -8,7 +8,7 @@ import java.rmi.RemoteException;
 public class Server {
     public static void main(String[] args) throws NamingException, RemoteException {
         Context context=new InitialContext();
-        context.bind("rmi://localhost:1099/imath",new IMathImpl());
+        context.bind("rmi://localhost:1099/imath",new IMathImplAdd());
 
     }
 }

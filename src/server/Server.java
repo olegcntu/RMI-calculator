@@ -12,7 +12,7 @@ import java.rmi.registry.Registry;
 public class Server {
     public static void main(String[] args) throws  RemoteException, MalformedURLException {
         LocateRegistry.createRegistry(1100);
-        Naming.rebind("rmi://localhost/imath",new IMathImplOperation());
+        Naming.rebind("rmi://localhost:1100/imath",new IMathImplOperation());
 
 
     }

@@ -3,6 +3,9 @@ package server;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
+//nicastRemoteObject -Базові функціональні відносини ,
+// необхідня для керування віддаленими обєктами.
+
 public class IMathImplOperation extends UnicastRemoteObject implements IMath {
 
     protected IMathImplOperation() throws RemoteException {

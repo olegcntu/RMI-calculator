@@ -12,7 +12,9 @@ public class Client {
 
     public int inquiry (int num1, int num2, String param) throws NamingException, RemoteException {
         Context context = new InitialContext();
-        IMath iMath = (IMath) context.lookup("rmi://localhost:1099/imath");
+
+        IMath iMath = (IMath) context.lookup("rmi://localhost:1100/imath");
+
         int result = iMath.operation(num1, num2, param);
         return result;
 
